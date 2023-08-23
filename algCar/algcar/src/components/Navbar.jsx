@@ -4,13 +4,13 @@ import ImgLogo from '/src/image/logo.png'
 import ImgBusca from '/src/image/loupe.red.svg'
 import "./Navbar.css"
 
-const App = () => {
+const NavbarAcessar = () => {
   return (
     <div>
         <div className="redCor"></div>
             <div className="header" id="header">
             <div className="logo_header">
-                <img src={ImgLogo} alt="Minha Imagem"/>
+                <img src={ImgLogo} alt="Imagem Logo"/>
 
 
                 <div className="nav" id="nav">
@@ -22,10 +22,10 @@ const App = () => {
                             <Link to='/'>Sobre</Link>
                         </li>
                         <li>
-                            <Link to='/'>Listar Veiculo</Link>
+                            <Link to='/'>Listar Carros</Link>
                         </li>
                         <li>
-                            <Link to='/'>Adicionar Carro</Link>
+                            <Link to='/'>Adicionar Carros</Link>
                         </li>
                     </ul>
                 </div>
@@ -48,4 +48,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default NavbarAcessar;

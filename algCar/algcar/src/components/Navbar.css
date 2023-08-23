@@ -24,10 +24,21 @@ body{
     background-color: var(--color-red);
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-white);
+    height: 5rem;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 1px 1px rgb(146, 137, 137);
+}
+
 .logo_header{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
 }
 
 .logo_header img{
@@ -44,18 +55,23 @@ body{
 }
 
 .nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-black);
     padding: 10px;
     transition: 0.4s;
     font-weight: bold;
-}
+}  
 
 .nav ul{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 25px;
+    gap: 20px;
+    font-size: 15px;
 }
-
 
 .nav a:hover{
     color: var(--color-red);
@@ -64,17 +80,6 @@ body{
 .botao-acesso a{
     color: var(--color-red);
     font-weight: bold;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--color-white);
-    height: 5rem;
-    justify-content: space-between;
-    padding: 0 5%;
-    box-shadow: 1px 1px rgb(146, 137, 137);
 }
 
 .header .botao-busca{
@@ -92,7 +97,7 @@ body{
     border-radius: 50px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 1px 1px rgb(146, 137, 137);
 }
@@ -115,11 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-.loupe-white{
-    display: none;
-}
+} 
 
 .pesq-botao:hover{
     box-shadow: 1px 2px rgb(146, 137, 137);
@@ -127,8 +128,162 @@ body{
 }
 
 .pesq-botao:hover > .pesq-texto {
-    width: 220px;
+    width: 150px;
     padding-left: 20px;
 }
 
+.botao-busca a{
+    font-size: 15px;
+}
+
 /*--------*/
+
+@media screen and (max-width: 1100px){
+
+    .logo_header{
+        gap: 20px;
+    }
+
+    .logo_header img{
+        height: 28px;
+    }
+
+    .nav a{
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .nav ul{
+        gap: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .header{
+        height: 4rem;
+    }
+
+    .redCor{
+        height: 0.8rem;
+    }
+
+    .logo_header{
+        gap: 30px;
+    }
+
+    .logo_header img{
+        height: 30px;
+    }
+
+    .nav a{
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .nav ul{
+        gap: 20px;
+        padding: 0px;
+    }
+
+    .header .botao-busca{
+        font-size: 10px;
+        gap: 25px;
+    }
+
+    .pesq-botao{
+        height: 10px;
+    }
+
+    .pesq-texto{
+        font-size: 10px;
+    }
+
+    .pesq-btn{
+        height: 5px;
+        width: 100%;
+    }
+
+    .loupe-red{
+        width: 10px;
+    }
+
+    .pesq-botao:hover{
+        border-radius: 15px;
+    }
+
+    .pesq-botao:hover > .pesq-texto {
+        width: 150px;
+        padding-left: 1;
+    }
+
+    .botao-busca a{
+        font-size: 10px;
+    }
+} 
+
+@media screen and (max-width: 740px){
+
+    .header{
+        height: 3rem;
+    }
+
+    .redCor{
+        height: 0.5rem;
+    }
+
+    .logo_header{
+        gap: 10px;
+    }
+
+    .logo_header img{
+        height: 20px;
+    }
+
+    .nav a{
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .nav ul{
+        gap: 10px;
+        padding: 0px;
+    }
+
+    .header .botao-busca{
+        font-size: 9px;
+        gap: 10px;
+    }
+
+    .pesq-botao{
+        height: 5px;
+    }
+
+    .pesq-texto{
+        font-size: 9px;
+    }
+
+    .pesq-btn{
+        height: 1px;
+        width: 20%;
+    }
+
+    .loupe-red{
+        width: 10px;
+    }
+
+    .pesq-botao:hover{
+        border-radius: 10px;
+    }
+
+    .pesq-botao:hover > .pesq-texto {
+        width: 50px;
+        padding-left: 1px;
+    }
+
+    .botao-busca a{
+        font-size: 9px;
+    }
+    
+} 
