@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import React from 'react';
-import ImgLogo from '/src/image/logo.png'
+import ImgLogo from '/src/image/logo.svg'
 import ImgBusca from '/src/image/loupe.red.svg'
 import "./Navbar.css"
 
-const NavbarAcessar = () => {
+const Navbar = () => {
   return (
     <div>
         <div className="redCor"></div>
-            <div className="header" id="header">
+        <div className="header" id="header">
             <div className="logo_header">
                 <img src={ImgLogo} alt="Imagem Logo"/>
 
@@ -34,8 +34,8 @@ const NavbarAcessar = () => {
             <div className="botao-busca">
                 <div className="pesq-botao" id="pesq-botao">
                     <input type="text" className="pesq-texto" placeholder="Pesquisar carros..." />
-                    <a className="pesq-btn" href="">
-                    <img className="loupe-red" src={ImgBusca} alt="" width="15px" height="15px" />
+                    <a className="pesq-btn" href="#">
+                        <img className="loupe-red" src={ImgBusca} alt="" width="15px" height="15px" />
                     </a>
                 </div>
 
@@ -48,4 +48,4 @@ const NavbarAcessar = () => {
   );
 }
 
-export default NavbarAcessar;
+export default Navbar;

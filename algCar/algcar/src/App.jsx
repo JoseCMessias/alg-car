@@ -1,6 +1,8 @@
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Footer from './components/Footer/Footer.jsx'
+import {ListarVeiculos} from './pages/ListarVeiculos.jsx';
+import {AdicionarVeiculos} from './pages/AdicionarVeiculos.jsx';
 
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
       <Router>
         <Navbar />
           <Routes>
-            <Route path='/'>Home</Route>
+            <Route path='/' element={<ListarVeiculos />} />
+            <Route path='/add' element={<AdicionarVeiculos />} />
           </Routes>
+        <Footer />
       </Router>
   )
 }

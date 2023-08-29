@@ -9,8 +9,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
 }
 
 body{
@@ -62,6 +60,7 @@ body{
     padding: 10px;
     transition: 0.4s;
     font-weight: bold;
+    text-decoration: none;
 }  
 
 .nav ul{
@@ -71,6 +70,7 @@ body{
     flex-direction: row;
     gap: 20px;
     font-size: 15px;
+    list-style: none;
 }
 
 .nav a:hover{
@@ -80,6 +80,7 @@ body{
 .botao-acesso a{
     color: var(--color-red);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .header .botao-busca{
