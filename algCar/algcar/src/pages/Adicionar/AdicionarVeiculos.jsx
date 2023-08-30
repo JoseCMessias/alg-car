@@ -14,7 +14,7 @@ export const AdicionarVeiculos = ({}) => {
         localStorage.setItem('veiculos', JSON.stringify(storedVeiculos));
 
         console.log("Veiculo adicionado com sucesso", veiculo);
-        navigate('/');
+        navigate('/listar');
     }
 
     return (

@@ -22,7 +22,7 @@ const Navbar = () => {
                             <Link to='/'>Sobre</Link>
                         </li>
                         <li>
-                            <Link to='/'>Listar Carros</Link>
+                            <Link to='/listar'>Listar Carros</Link>
                         </li>
                         <li>
                             <Link to='/add'>Adicionar Carros</Link>
@@ -40,7 +40,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="botao-acesso" id="botao-acesso">
-                    <a href="#">Acessar</a>
+                    <ul>
+                        <li>
+                            <Link to='acessar'>Acessar</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
       </div>
