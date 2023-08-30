@@ -18,6 +18,7 @@ export const ListarVeiculos = ({}) => {
                 {veiculos.map((veiculo, index) => (
                     <li key={index}>
                         Marca: {veiculo.marca}, Modelo: {veiculo.modelo}
+                        <button>Remover</button>
                     </li>
                 ))}
             </ul>

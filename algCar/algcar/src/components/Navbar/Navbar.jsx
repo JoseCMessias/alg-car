@@ -25,7 +25,7 @@ const Navbar = () => {
                             <Link to='/'>Listar Carros</Link>
                         </li>
                         <li>
-                            <Link to='/'>Adicionar Carros</Link>
+                            <Link to='/add'>Adicionar Carros</Link>
                         </li>
                     </ul>
                 </div>

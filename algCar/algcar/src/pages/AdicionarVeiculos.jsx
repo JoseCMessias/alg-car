@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './adicionarVeiculo.css'
 
 
 export const AdicionarVeiculos = ({}) => {
@@ -19,20 +18,20 @@ export const AdicionarVeiculos = ({}) => {
     }
 
     return (
-        <div className="form-adicionar">
+        <div>
             <h2> Adicionar Veículo </h2>
             <form onSubmit={handleSubmit} >
-                <label className="label-adicionar">
+                <label>
                     Marca:
                     <input type="text" name="marca" value={veiculo.marca} onChange={(e) => setVeiculo({ ...veiculo, marca: e.target.value})}/>
                 </label>
                 <br />
-                <label className="label-adicionar">
+                <label>
                     Modelo:
                     <input type="text" name="modelo"  value={veiculo.modelo} onChange={(e) => setVeiculo({ ...veiculo, modelo: e.target.value})}/>
                 </label>
                 <br />
-                <button className="botao-adicionat" type="submit">Adicionar Veículo</button>
+                <button type="submit">Adicionar Veículo</button>
             </form>
         </div>
     )
