@@ -15,8 +15,8 @@ const Carrousel = () => {
     const [slidesPerView, setSlidePerView] = useState(1)
 
     const data = [
-        { id: '1', image: './src/image/slide1.svg'},
-        { id: '2', image: './src/image/slide2.svg'},
+        { id: '1', image: '/public/slide1.svg'},
+        { id: '2', image: '/public/slide2.svg'},
     ]
 
     useEffect(() =>{
@@ -51,9 +51,9 @@ const Carrousel = () => {
                 {data.map( (item) => (
                     <SwiperSlide key={item.id}>
                         <img 
+                            className='slide-item'
                             src={item.image} 
-                            alt="Slider"
-                            className='slide-item'  
+                            alt="Slider"  
                         />
                     </SwiperSlide>
                 ))}

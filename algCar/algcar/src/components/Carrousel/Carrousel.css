@@ -16,3 +16,21 @@
     height: 250px;
     object-fit: cover;  
 }
+
+@media screen and (max-width: 900px){    
+    .slide-item {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px){    
+    .slide-item {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px){    
+    .slide-item {
+        height: 100px;
+    }
+}

@@ -1,5 +1,5 @@
-
 import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom';
 
 export const ListarVeiculos = ({}) => {
 
@@ -11,6 +11,12 @@ export const ListarVeiculos = ({}) => {
         setVeiculos(storedVeiculos);
     }, []);
 
+    const handleRemoverVeiculo = (index) => {
+        const updateVeiculo = veiculos.filter((_, i) => i !== index);
+        localStorage.setItem('veiculos', JSON.stringify(updateVeiculo));
+        setVeiculos(updateVeiculo);
+    }
+
     return (
         <div>
             <h2>Listar Veiculos</h2>
@@ -18,7 +24,10 @@ export const ListarVeiculos = ({}) => {
                 {veiculos.map((veiculo, index) => (
                     <li key={index}>
                         Marca: {veiculo.marca}, Modelo: {veiculo.modelo}
-                        <button>Remover</button>
+                        <Link to={`/edit/${index}`}>
+                            <button>Editar</button>
+                        </Link>
+                        <button onClick={() => handleRemoverVeiculo(index)}>Excluir</button>
                     </li>
                 ))}
             </ul>

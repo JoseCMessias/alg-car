@@ -5,15 +5,13 @@ html {
 }
 
 body {
-    display: flex;
+   
     flex-direction: column;
     min-height: 100%;
 }
 
 .footer{
-    margin-top: auto;
-    bottom: 0;
-    position: fixed;
+    margin-top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -25,38 +23,25 @@ body {
     align-items: center;
     font-family: sans-serif;
     color: white;
-    font-size: 6px;
-    gap: 6px;
+    font-size: 11px;
     background-color: #CD1E1E;
     height: 3rem;
-}
-
-.footer img{
-    max-width: 13.5px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 880px){
 
     .footer{
-        font-size: 5px;
-        gap: 5px;
+        font-size: 7px;
         height: 2.8rem;
-    }
-
-    .footer img{
-        max-width: 13px;
     }
 }
 
 @media screen and (max-width: 680px){
 
     .footer{
-        font-size: 5px;
-        gap: 5px;
+        font-size: 7px;
         height: 2.5rem;
     }
 
-    .footer img{
-        max-width: 11.5px;
-    }
 }
