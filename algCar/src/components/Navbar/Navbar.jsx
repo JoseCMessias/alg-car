@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import React from 'react';
-import ImgLogo from '/public/logo.svg'
-import ImgBusca from '/public/loupe.red.svg'
+import ImgLogo from '/src/assets/logo.svg'
+import ImgBusca from '/src/assets/loupe.red.svg'
 import "./Navbar.css"
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div>
         <div className="redCor"></div>
@@ -51,5 +51,3 @@ const Navbar = () => {
     </div>
   );
 }
-
-export default Navbar;

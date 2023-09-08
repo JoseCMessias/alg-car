@@ -15,8 +15,8 @@ const Carrousel = () => {
     const [slidesPerView, setSlidePerView] = useState(1)
 
     const data = [
-        { id: '1', image: '/public/slide1.svg'},
-        { id: '2', image: '/public/slide2.svg'},
+        { id: '1', image: '/src/assets/slide1.svg'},
+        { id: '2', image: '/src/assets/slide2.svg'},
     ]
 
     useEffect(() =>{

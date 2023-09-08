@@ -27,7 +27,9 @@ export const ListarVeiculos = ({}) => {
                         <Link to={`/edit/${index}`}>
                             <button>Editar</button>
                         </Link>
-                        <button onClick={() => handleRemoverVeiculo(index)}>Excluir</button>
+                        <button onClick={() => handleRemoverVeiculo(index)}>
+                            Excluir
+                        </button>
                     </li>
                 ))}
             </ul>
