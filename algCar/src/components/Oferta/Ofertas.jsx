@@ -1,5 +1,5 @@
 import React from 'react';
-import Oferta from '/public/oferta.svg'
+import Oferta from '../../assets/oferta.svg'
 import './Ofertas.css'
 
 function Ofertas() {

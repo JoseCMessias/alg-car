@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer.jsx';
 import {ListarVeiculos} from './pages/Listar/ListarVeiculos.jsx';
 import {AdicionarVeiculos} from './pages/Adicionar/AdicionarVeiculos.jsx';
 import {EditarVeiculos} from './pages/Editar/EditarVeiculos.jsx';
+import {Home} from './pages/Home/Home.jsx';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     
 
           <Routes>
+            <Route path='/' element={<Home />}></Route>
             <Route path='/listar' element={<ListarVeiculos />} />
             <Route path='/add' element={<AdicionarVeiculos />} />
             <Route path="/edit/:index" element={<EditarVeiculos />} />

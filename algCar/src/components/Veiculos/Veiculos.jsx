@@ -1,11 +1,12 @@
 import React from 'react';
 import './Veiculos.css';
-import Gol from '/public/gol.svg'
-import Jeep from '/public/jeep.svg'
-import Mobi from '/public/mobi.svg'
-import Renault from '/public/renault.svg'
+import Gol from '../../assets/gol.svg'
+import Jeep from '../../assets/jeep.svg'
+import Mobi from '../../assets/mobi.svg'
+import Renault from '../../assets/renault.svg'
 
 function Veiculos() {
+    
   return (
     <>
         <div className="titulo1">

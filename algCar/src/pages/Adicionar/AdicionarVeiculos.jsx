@@ -26,13 +26,13 @@ export const AdicionarVeiculos = ({}) => {
                     <div className="form-inputs">
                         <div className="add-grupo">
                             <label className="form-label">
-                                Marca:
-                                <input type="text" name="marca" value={veiculo.marca} onChange={(e) => setVeiculo({ ...veiculo, marca: e.target.value})}/>
+                                Marca:  
+                                <input type="text" name="marca" required value={veiculo.marca} onChange={(e) => setVeiculo({ ...veiculo, marca: e.target.value})}/>
                             </label>
 
                             <label className="form-label">
                                 Modelo:
-                                <input type="text" name="modelo"  value={veiculo.modelo} onChange={(e) => setVeiculo({ ...veiculo, modelo: e.target.value})}/>
+                                <input type="text" name="modelo"  required value={veiculo.modelo} onChange={(e) => setVeiculo({ ...veiculo, modelo: e.target.value})}/>
                             </label>
 
                             <label className="form-label">
