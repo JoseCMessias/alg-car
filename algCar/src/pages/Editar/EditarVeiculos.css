@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form-editar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container-editar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 600px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+
+}
+
+.Titulo-editar{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.form-input-editar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.editar-grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: flex-start;
+    gap: 20px;
+}
+
+.editar-grupo input{
+    height: 25px;
+    max-width: 200px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+.form-label-editar{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.form-label-editar input{
+    padding-left: 10px;
+    color: #737373;
+    outline: none;
+}
+
+.form-button-editar button{
+    background-color: #CD1E1E;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+@media screen and (max-width: 670px){
+    .form-container-editar{
+        height: 310px;
+        width: 450px;
+    }
+
+    .Titulo-editar{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .form-input-editar{
+        padding: 5px;
+    }
+
+    .editar-grupo{
+        gap: 15px;
+    }
+
+    .editar-grupo input{
+        height: 22px;
+        max-width: 110px;
+        border-radius: 3px;
+    }
+
+    .form-label-editar{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .form-label-editar input{
+        padding-left: 9px;
+    }
+    
+    .form-button-editar button{
+        height: 25px;
+        width: 90px;
+        margin-top: 15px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form-container-editar{
+        height: 280px;
+        width: 350px;
+    }
+
+    .Titulo-editar{
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .form-input-editar{
+        padding: 3px;
+    }
+
+    .editar-grupo{
+        gap: 11px;
+    }
+
+    .editar-grupo input{
+        height: 18px;
+        max-width: 85px;
+        border-radius: 3px;
+    }
+
+    .form-label-editar{
+        font-size: 10px;
+        margin-top: 9px;
+    }
+
+    .form-label-editar input{
+        padding-left: 8px;
+    }
+    
+    .form-button-editar button{
+        height: 20px;
+        width: 80px;
+        margin-top: 15px;
+        border-radius: 3px;
+        font-size: 11px;
+    }
+}
