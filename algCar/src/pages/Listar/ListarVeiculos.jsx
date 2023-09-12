@@ -23,7 +23,11 @@ export const ListarVeiculos = ({}) => {
             <ul>
                 {veiculos.map((veiculo, index) => (
                     <li key={index}>
-                        Marca: {veiculo.marca}, Modelo: {veiculo.modelo}
+                        {/* {marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''} */}
+
+                        Marca: {veiculo.marca}, 
+                        Modelo: {veiculo.modelo}, 
+
                         <Link to={`/edit/${index}`}>
                             <button>Editar</button>
                         </Link>
