@@ -33,7 +33,7 @@ export const Navbar = () => {
 
             <div className="botao-busca">
                 <div className="pesq-botao" id="pesq-botao">
-                    <input type="text" className="pesq-texto" placeholder="Pesquisar carros..." />
+                    <input type="seaech" className="pesq-texto" placeholder="Pesquisar carros..." />
                     <a className="pesq-btn" href="#">
                         <img className="loupe-red" src={ImgBusca} alt="" width="15px" height="15px" />
                     </a>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <div className="botao-acesso" id="botao-acesso">
                     <ul>
                         <li>
-                            <Link to='acessar'>Acessar</Link>
+                            <Link to='/login'>Acessar</Link>
                         </li>
                     </ul>
                 </div>
