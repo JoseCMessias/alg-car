@@ -5,7 +5,7 @@ import "./adicionarVeiculo.css"
 
 export const AdicionarVeiculos = ({}) => {
     const navigate = useNavigate();
-    const [veiculo, setVeiculo] = useState({marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''})
+    const [veiculo, setVeiculo] = useState({image: '', marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''})
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -18,6 +18,8 @@ export const AdicionarVeiculos = ({}) => {
         navigate('/listar');
     }
 
+    // const recImgae = 
+
     return (
         <div className="form-adicionar">
             <div className="form-container">
@@ -25,8 +27,18 @@ export const AdicionarVeiculos = ({}) => {
                 <form onSubmit={handleSubmit} >
                     <div className="form-inputs">
                         <div className="add-grupo">
+
+                            {/* <label className="form-label-imput">
+                                    recebe image
+                                <input type="text" name="image" required value={veiculo.recImgae} onChange={(e) => setVeiculo({ ...veiculo, recImagae: e.target.value})}/>
+                            </label>
+
+                            <label className="form-label-imput">
+                                <input type="image" name="image" src={recImgae} required value={veiculo.image} onChange={(e) => setVeiculo({ ...veiculo, image: e.target.value})}/>
+                            </label> */}
+
                             <label className="form-label">
-                                Marca:  
+                                Marca:
                                 <input type="text" name="marca" required value={veiculo.marca} onChange={(e) => setVeiculo({ ...veiculo, marca: e.target.value})}/>
                             </label>
 
@@ -40,7 +52,7 @@ export const AdicionarVeiculos = ({}) => {
                                 <input type="text" name="ano"  value={veiculo.ano} onChange={(e) => setVeiculo({ ...veiculo, ano: e.target.value})}/>
                             </label>
                         </div>
-                    
+
                         <div  className="add-grupo">
                             <label className="form-label">
                                 Portas:
