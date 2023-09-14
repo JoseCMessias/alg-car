@@ -27,9 +27,18 @@ editar e excluir informações.
 
 ## Como Usar 	&#128377;&#65039;
 
-- Clone o repósitorio
-- Instale o npm no projeto com o comando npm install
+- Clone o repositório
+    ```
+      git clone https://github.com/JoseCMessias/alg-carros.git
+    ```
+- Instale o npm no projeto dentro da pasta algCar
+     ```
+       npm install
+     ```
 - Execute o projeto com o comando npm run dev
+    ```
+       npm run dev
+     ```
 
 ## Características 		&#128221;
 
