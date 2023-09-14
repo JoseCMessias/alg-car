@@ -27,15 +27,15 @@ editar e excluir informações.
 
 ## Como Usar 	&#128377;&#65039;
 
-- Clone o repositório
+- Clone o repositório com o comando:
     ```
       git clone https://github.com/JoseCMessias/alg-carros.git
     ```
-- Instale o npm no projeto dentro da pasta algCar
+- Instale o npm no projeto dentro da pasta algCar:
      ```
        npm install
      ```
-- Execute o projeto com o comando npm run dev
+- Execute o projeto com o comando:
     ```
        npm run dev
      ```
