@@ -47,6 +47,8 @@ As principais características do site são:
 
 - [Licença MIT](https://github.com/JoseCMessias/alg-carros/blob/main/LICENSE)
 
+<!-- 
 ## Deseja testar nosso site? &#128105;&#8205;&#128187;
 
 - [Link executável]()
+-->
