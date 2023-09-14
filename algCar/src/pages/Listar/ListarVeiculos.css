@@ -1,0 +1,98 @@
+.container-listar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo-listar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+.veiculo-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.veiculo-li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 250px;
+    width: 20%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+.imput-file-listar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 172px;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.descricao-listar{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;  
+}
+
+.veiculo-editar-excluir{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.veiculo-editar-listar button{
+    height: 20px;
+    width: 55px;
+    background-color: #cda71e ;   
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.veiculo-excluir-listar button{
+    height: 20px;
+    width: 55px;
+    background-color: #CD1E1E ;   
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
