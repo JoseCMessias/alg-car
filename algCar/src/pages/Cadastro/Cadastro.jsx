@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Cadastro.css'; 
 import {Link} from 'react-router-dom';
+import logoImg from '../../assets/logo.svg';
 
 export const Cadastro = () => {
  
@@ -8,9 +9,8 @@ export const Cadastro = () => {
     <div>
       <div className="section-cadastro">
         <div className="cadastro">
-          <div>
-            <img src="/Cadastro/img/logo.svg" alt="" />
-          </div>
+          
+        <img src={logoImg} alt="imagem da logo" />
 
           <form>
             <div className="inputs-cadastro">

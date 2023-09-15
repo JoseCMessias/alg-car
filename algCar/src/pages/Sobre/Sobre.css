@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     .container-sobre{
         max-width: 320px;;
         height: 270px;
@@ -124,4 +124,35 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .container-sobre{
+        max-width: 260px;;
+        height: 260px;
+        padding: 20px;
+        border-radius: 9px;
+    }
+
+    .container-sobre h1{
+        font-size: 12px;
+    }
+
+    .sobre-sobre{
+        gap: 25px;
+    }
+
+    .perfil-sobre h2{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+
+    .perfil-sobre img{
+        max-width: 80px;
+    }
+    
+    .text-sobre{
+        font-size: 10px;
+    }
+}
+
 

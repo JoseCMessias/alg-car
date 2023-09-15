@@ -9,10 +9,9 @@ export const Login = () => {
     return (
       <div className="section-login">
         <div className="login">
-          <div className="img">
-            <img src={logoImg} alt="imagem da logo" />
-          </div>
-  
+    
+          <img src={logoImg} alt="imagem da logo" />
+        
           <form>
             <div className="inputs">
                 <input
