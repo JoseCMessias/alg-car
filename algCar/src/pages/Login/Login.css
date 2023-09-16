@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    width: 30%;
+    width: 35%;
     height: 50%;
     border-radius: 10px;
     padding: 35px;
@@ -79,9 +79,106 @@
     margin-left: 5px;
 }
 
-@media screen and (max-width: 50px) {
+@media(max-width: 900px) {
+    .login {
+        width: 50%;
+        height: 50%;
+    }
+
+    .login input {
+        height: 44px;
+    }
+
+    .login img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
+    .login input::placeholder {
+        font-size: 14px;
+    }
+
+    .login form [type="submit"] {
+        font-size: 15px;
+    }
+    
+    .login p {
+        font-size: 15px;
+        margin-top: 13px;
+    }
+    
+    .login a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .login {
+        width: 60%;
+        height: 50%;
+    }
+
+    .login input {
+        height: 40px;
+    }
+
+    .login img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
+    .login input::placeholder {
+        font-size: 14px;
+    }
+
+    .login form [type="submit"] {
+        font-size: 14px;
+    }
+    
+    .login p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    
+    .login a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 400px) {
     .login {
         border: none;
         box-shadow: none;
+        width: 70%;
+        height: 10%;
+    }
+
+    .login input {
+        height: 35px;
+    }
+
+    .login img {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+    
+    .login input::placeholder {
+        font-size: 13px;
+    }
+
+    .login form [type="submit"] {
+        font-size: 13px;
+    }
+    
+    .login p {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    
+    .login a {
+        font-size: 12px;
+        margin-left: 5px;
     }
 }
+
+
