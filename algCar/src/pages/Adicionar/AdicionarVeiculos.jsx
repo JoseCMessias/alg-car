@@ -50,7 +50,7 @@ export const AdicionarVeiculos = ({}) => {
 
                             <label className="form-label">
                                 Ano:
-                                <input type="text" 
+                                <input type="number" 
                                 name="ano"  
                                 value={veiculo.ano} 
                                 onChange={
@@ -62,7 +62,7 @@ export const AdicionarVeiculos = ({}) => {
                         <div  className="add-grupo">
                             <label className="form-label">
                                 Portas:
-                                <input type="text" 
+                                <input type="number" 
                                 name="portas"  
                                 value={veiculo.portas} 
                                 onChange={
@@ -72,7 +72,7 @@ export const AdicionarVeiculos = ({}) => {
 
                             <label className="form-label">
                                 Passageiros:
-                                <input type="text" 
+                                <input type="number" 
                                 name="passageiros"  
                                 value={veiculo.passageiros} 
                                 onChange={
