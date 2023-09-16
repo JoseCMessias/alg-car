@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    width: 30%;
+    width: 40%;
     height: 70%;
     border-radius: 10px;
     padding: 35px;
@@ -80,4 +80,107 @@
     text-decoration: none;
     color: #CD1E1E;
     margin-left: 5px;
+}
+
+@media(max-width: 900px) {
+    .cadastro {
+        width: 50%;
+        height: 50%;
+        padding: 65px;
+    }
+
+    .cadastro input {
+        height: 44px;
+    }
+
+    .cadastro img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
+    .cadastro input::placeholder {
+        font-size: 14px;
+    }
+
+    .cadastro form [type="submit"] {
+        font-size: 15px;
+    }
+    
+    .cadastro p {
+        font-size: 15px;
+        margin-top: 13px;
+    }
+    
+    .cadastro a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .cadastro {
+        width: 60%;
+        height: 50%;
+    }
+
+    .cadastro input {
+        height: 40px;
+    }
+
+    .cadastro img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
+    .cadastro input::placeholder {
+        font-size: 14px;
+    }
+
+    .cadastro form [type="submit"] {
+        font-size: 14px;
+    }
+    
+    .cadastro p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    
+    .cadastro a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 400px) {
+    .cadastro {
+        border: none;
+        box-shadow: none;
+        width: 70%;
+        height: 10%;
+    }
+
+    .cadastro input {
+        height: 35px;
+    }
+
+    .cadastro img {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+    
+    .cadastro input::placeholder {
+        font-size: 13px;
+    }
+
+    .cadastro form [type="submit"] {
+        font-size: 13px;
+    }
+    
+    .cadastro p {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    
+    .cadastro a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
 }
