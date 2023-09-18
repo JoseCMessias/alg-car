@@ -25,11 +25,11 @@ export const ListarVeiculos = ({}) => {
                 <ul className="veiculo-ul">
                     {veiculos.map((veiculo, index) => (
                         <li className="veiculo-li" key={index}>
-                            {/* {image: '', marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''} */}
-
+                           
                             <div className="imput-file-listar">
-                                {/* {veiculo.image} */}
+                                {veiculo.image}
                             </div>
+                            <img src={veiculo.image} alt="" />
 
                             <div className="descricao-listar">
                                 <div className="listar-marca">
