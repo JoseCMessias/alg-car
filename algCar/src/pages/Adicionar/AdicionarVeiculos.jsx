@@ -46,11 +46,6 @@ export const AdicionarVeiculos = ({}) => {
                   onChange={(e) => setVeiculo({ ...veiculo, image: e.target.value })}
                 />
               </label>
-              {veiculo.image && (
-                <div className="adicionaIMG">
-                  <img src={veiculo.image} alt="Imagem do veículo" />
-                </div>
-              )}
             </div>
 
             <div className="add-grupo">
