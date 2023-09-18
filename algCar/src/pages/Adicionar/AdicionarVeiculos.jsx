@@ -24,8 +24,18 @@ export const AdicionarVeiculos = ({}) => {
                 <h2 className="Titulo-adicionar"> Adicionar Veículo </h2>
                 <form onSubmit={handleSubmit} >
                     <div className="form-inputs">
-                        <div className="add-grupo">
 
+                        <div className="add-grupo">
+                            <input type="file" name="image" 
+                            required 
+                            value={veiculo.image} 
+                            onChange={
+                                (e) => setVeiculo({ ...veiculo, image: e.target.value})
+                            }/>
+                                <img src={veiculo} alt="" />
+                        </div>
+
+                        <div className="add-grupo">
                             <label className="form-label">
                                 Marca:
                                 <input type="text" 
