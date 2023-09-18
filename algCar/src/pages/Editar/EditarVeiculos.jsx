@@ -1,58 +1,70 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import './EditarVeiculos.css';
+import "./EditarVeiculos.css";
 
 export const EditarVeiculos = () => {
-    const { index } = useParams();
-    const navigate = useNavigate();
-    const [veiculo, setVeiculo] = useState({ image: '', marca: '', modelo: '' });
+  const { index } = useParams();
+  const navigate = useNavigate();
+  const [veiculo, setVeiculo] = useState({
+    image: "", // Inicialmente, a imagem é uma string vazia
+    marca: "",
+    modelo: "",
+    ano: "",
+    portas: "",
+    passageiros: "",
+    portaMala: "",
+    volante: "",
+    ar: "",
+    direcao: "",
+  });
 
-    useEffect(() => {
-        const storedVeiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
-        if (storedVeiculos[index]) {
-            setVeiculo(storedVeiculos[index]);
-        }
-    }, [index]);
-
-    const handleImageChange = (event) => {
-        const file = event.target.files[0];
-
-        if (file) {
-            const imageURL = URL.createObjectURL(file);
-            setVeiculo({ ...veiculo, image: imageURL });
-        }
+  useEffect(() => {
+    const storedVeiculos = JSON.parse(localStorage.getItem("veiculos")) || [];
+    if (storedVeiculos[index]) {
+      setVeiculo(storedVeiculos[index]);
     }
+  }, [index]);
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-        const storedVeiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
-        storedVeiculos[index] = veiculo;
-        localStorage.setItem('veiculos', JSON.stringify(storedVeiculos));
+    const storedVeiculos = JSON.parse(localStorage.getItem("veiculos")) || [];
+    storedVeiculos[index] = veiculo;
+    localStorage.setItem("veiculos", JSON.stringify(storedVeiculos));
 
-        console.log("Veículo editado: ", veiculo);
-        navigate('/listar');
-    }
+    console.log("Veículo editado: ", veiculo);
+    navigate("/listar");
+  };
 
-    return (
-        <div className="form-editar">
-            <div className="form-container-editar">
-                <h2 className="Titulo-editar"> Editar Veículo </h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="form-inputs-editar">
+  return (
+    <div className="form-editar">
+      <div className="form-container-editar">
+        <h2 className="Titulo-editar"> Editar Veículo </h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-inputs-editar">
+            <div className="editar-grupo-img">
+                <label className="form-label-editar">
+                     Imagem (URL do Google):
+                    <input
+                    className="picture"
+                    type="text"
+                    name="image"
+                    required
+                    value={veiculo.image}
+                    onChange={(e) =>
+                        setVeiculo({ ...veiculo, image: e.target.value })
+                    }
+                    />
+                </label>
+                {veiculo.image && (
+                    <div className="adicionaIMG">
+                    <img src={veiculo.image} alt="Imagem do veículo" />
+                    </div>
+                )}
+            </div>
 
-                        <div className="editar-grupo-img">
-                            <label className="form-label-editar">
-                                Imagem:
-                                <input type="file" onChange={handleImageChange} />
-                            </label>
-                            {veiculo.image && (
-                                <img src={veiculo.image} alt="Imagem do veículo" />
-                            )}
-                        </div>
-                        
-                        <div className="editar-grupo">
-                                <label className="form-label-editar">
+            <div className="editar-grupo">
+                <label className="form-label-editar">
                                     Marca:  
                                     <input type="text" value={veiculo.marca} onChange={
                                         (e) => setVeiculo({ ...veiculo, marca: e.target.value})}/>
@@ -110,13 +122,12 @@ export const EditarVeiculos = () => {
                                         (e) => setVeiculo({ ...veiculo, direcao: e.target.value})}/>
                                 </label>
                             </div>
-                        
-                        <div className="form-button-editar">
-                            <button type="submit">Salvar</button>
-                        </div>
+                    <div className="form-button-editar">
+                        <button type="submit">Salvar</button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    );
-}
+    </div>
+  );
+};
