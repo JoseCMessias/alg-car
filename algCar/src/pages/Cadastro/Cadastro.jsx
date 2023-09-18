@@ -19,11 +19,9 @@ export const Cadastro = () => {
     <div>
       <div className="section-cadastro">
         <div className="cadastro">
-          
         <img src={logoImg} alt="imagem da logo" />
 
           <form onSubmit={handleCriarConta}>
-
             <div className="inputs-cadastro">
               <input
                   type="text"
