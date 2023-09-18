@@ -5,46 +5,53 @@ import './EditarVeiculos.css';
 export const EditarVeiculos = () => {
     const { index } = useParams();
     const navigate = useNavigate();
-    const [veiculo, setVeiculo] = useState({image: '', marca: '', modelo: ''});
+    const [veiculo, setVeiculo] = useState({ image: '', marca: '', modelo: '' });
 
     useEffect(() => {
-        const storedveiculo = JSON.parse(localStorage.getItem('veiculos')) || [];
-        if(storedveiculo[index]){
-            setVeiculo(storedveiculo[index]);
+        const storedVeiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
+        if (storedVeiculos[index]) {
+            setVeiculo(storedVeiculos[index]);
         }
     }, [index]);
 
-    const handleImg = (event) => {
-        addEventListener(event.target.value);
-        console(event.target.value);
+    const handleImageChange = (event) => {
+        const file = event.target.files[0];
+
+        if (file) {
+            const imageURL = URL.createObjectURL(file);
+            setVeiculo({ ...veiculo, image: imageURL });
+        }
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const storedveiculo = JSON.parse(localStorage.getItem('veiculos')) || [];
-        storedveiculo[index] = veiculo;
-        localStorage.setItem('veiculos', JSON.stringify(storedveiculo));
+        const storedVeiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
+        storedVeiculos[index] = veiculo;
+        localStorage.setItem('veiculos', JSON.stringify(storedVeiculos));
 
         console.log("Veículo editado: ", veiculo);
         navigate('/listar');
     }
 
     return (
-            <div className="form-editar">
-                <div className="form-container-editar">
-                    <h2 className="Titulo-editar"> Editar Veículo </h2>
-                    <form onSubmit={handleSubmit} >
-                        <div className="form-inputs-editar">
+        <div className="form-editar">
+            <div className="form-container-editar">
+                <h2 className="Titulo-editar"> Editar Veículo </h2>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-inputs-editar">
 
-                        <div className="editar-grupo" onSubmit={handleImg}>
-                            <label className="form-label-editar" value={veiculo.image} onChange={
-                                (e) => setVeiculo({...veiculo, image: e.target.value})}>
-                                <input type="file"/>
+                        <div className="editar-grupo-img">
+                            <label className="form-label-editar">
+                                Imagem:
+                                <input type="file" onChange={handleImageChange} />
                             </label>
+                            {veiculo.image && (
+                                <img src={veiculo.image} alt="Imagem do veículo" />
+                            )}
                         </div>
-
-                            <div className="editar-grupo">
+                        
+                        <div className="editar-grupo">
                                 <label className="form-label-editar">
                                     Marca:  
                                     <input type="text" value={veiculo.marca} onChange={
@@ -103,12 +110,12 @@ export const EditarVeiculos = () => {
                                         (e) => setVeiculo({ ...veiculo, direcao: e.target.value})}/>
                                 </label>
                             </div>
-
-                            <div className="form-button-editar">
-                                <button type="submit">Salvar</button>
-                            </div>
+                        
+                        <div className="form-button-editar">
+                            <button type="submit">Salvar</button>
                         </div>
-                    </form>
+                    </div>
+                </form>
             </div>
         </div>
     );
