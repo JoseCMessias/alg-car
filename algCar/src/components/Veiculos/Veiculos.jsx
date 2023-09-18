@@ -4,6 +4,7 @@ import Gol from '../../assets/gol.svg'
 import Jeep from '../../assets/jeep.svg'
 import Mobi from '../../assets/mobi.svg'
 import Renault from '../../assets/renault.svg'
+import { Link } from 'react-router-dom';
 
 function Veiculos() {
     
@@ -19,7 +20,7 @@ function Veiculos() {
                 <img className="img-frota" src={Mobi} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">FIAT MOBI</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -27,7 +28,7 @@ function Veiculos() {
                 <img className="img-frota" src={Renault} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">RENAULT LOGAN</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -35,7 +36,7 @@ function Veiculos() {
                 <img className="img-frota" src={Jeep} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">JEEP RENEGADE</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -43,7 +44,7 @@ function Veiculos() {
                 <img className="img-frota" src={Gol} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">VW GOL</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
         </div>
@@ -53,7 +54,7 @@ function Veiculos() {
                 <img className="img-frota" src={Mobi} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">FIAT MOBI</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -61,7 +62,7 @@ function Veiculos() {
                 <img className="img-frota" src={Renault} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">RENAULT LOGAN</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -69,7 +70,7 @@ function Veiculos() {
                 <img className="img-frota" src={Jeep} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">JEEP RENEGADE</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
 
@@ -77,7 +78,7 @@ function Veiculos() {
                 <img className="img-frota" src={Gol} alt="" />
                 <div className="frota-descrocao">
                     <h3 className="h3-frota">VW GOL</h3>
-                    <button className="botao-frota">Ver mais</button>
+                    <button className="botao-frota"><Link to="/descricao">Ver mais</Link></button>
                 </div>
             </div>
         </div>

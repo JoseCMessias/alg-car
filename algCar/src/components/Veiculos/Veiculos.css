@@ -30,6 +30,7 @@
     align-items: center;
     padding: 15px;
     gap: 25px;
+    cursor: pointer;
 }
 
 .img-frota{
@@ -71,6 +72,11 @@
     width: 100%;
     background-color: #F5F5F5;
     box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+.carro-frota a{
+    text-decoration: none;
+    color: #fff;
 }
 
 @media screen and (max-width:920px){
