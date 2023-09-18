@@ -5,7 +5,16 @@ import "./adicionarVeiculo.css"
 
 export const AdicionarVeiculos = ({}) => {
     const navigate = useNavigate();
-    const [veiculo, setVeiculo] = useState({image: '', marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''})
+    const [veiculo, setVeiculo] = useState({image: null, marca: '', modelo: '', ano: '', portas: '', passageiros: '', portaMala: '', volante: '', ar: '', direcao: ''})
+
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+    
+        if (file) {
+          const imageURL = URL.createObjectURL(file);
+          setVeiculo({ ...veiculo, image: imageURL }); 
+        }
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -16,7 +25,7 @@ export const AdicionarVeiculos = ({}) => {
 
         console.log("Veiculo adicionado com sucesso", veiculo);
         navigate('/listar');
-    }
+    };
 
     return (
         <div className="form-adicionar">
@@ -25,15 +34,21 @@ export const AdicionarVeiculos = ({}) => {
                 <form onSubmit={handleSubmit} >
                     <div className="form-inputs">
 
-                        <div className="add-grupo">
-                            <input type="file" name="image" 
-                            required 
-                            value={veiculo.image} 
-                            onChange={
-                                (e) => setVeiculo({ ...veiculo, image: e.target.value})
-                            }/>
-                                <img src={veiculo} alt="" />
+                    <div className="add-grupo-img">
+                        <label className="add-label-img">
+                            <input 
+                                className="picture"
+                                type="file"
+                                name="image"
+                                required
+                                onChange={handleFileChange}
+                            />
+                            <span className="image-span">Escolha uma imagem</span>
+                        </label>
+                        <div className="adicionaIMG">
+                            {veiculo.image && <img src={veiculo.image} alt="" />}
                         </div>
+                    </div>
 
                         <div className="add-grupo">
                             <label className="form-label">
