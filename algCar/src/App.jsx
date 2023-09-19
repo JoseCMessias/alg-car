@@ -14,7 +14,7 @@ import { Navbar } from "./components/Navbar/Navbar.jsx";
 function App() {
     return (
         <Router>
-            <Navbar />
+             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/homesair" element={<HomeSair />} />
