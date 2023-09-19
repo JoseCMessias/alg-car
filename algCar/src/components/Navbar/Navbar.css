@@ -1,29 +1,29 @@
-:root{
+:root {
     --color-white: #fff;
-    --color-red: #CD1E1E;
+    --color-red: #cd1e1e;
     --color-black: #000000;
-    --color-graybusca: #F5F5F5;
-    --color-gray: #7B7B7B;
+    --color-graybusca: #f5f5f5;
+    --color-gray: #7b7b7b;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-white);
     color: var(--color-black);
 }
 
-.redCor{
+.redCor {
     height: 20px;
     background-color: var(--color-red);
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,18 +34,18 @@ body{
     box-shadow: 1px 1px rgb(146, 137, 137);
 }
 
-.logo_header{
+.logo_header {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.logo_header img{
+.logo_header img {
     height: 50px;
     cursor: pointer;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,7 +53,7 @@ body{
     background-color: var(--color-white);
 }
 
-.nav a{
+.nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,9 +62,9 @@ body{
     transition: 0.4s;
     font-weight: bold;
     text-decoration: none;
-}  
+}
 
-.nav ul{
+.nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,17 +74,17 @@ body{
     list-style: none;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: var(--color-red);
 }
 
-.botao-acesso a{
+.botao-acesso a {
     color: var(--color-red);
     font-weight: bold;
     text-decoration: none;
 }
 
-.header .botao-busca{
+.header .botao-busca {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,8 +93,8 @@ body{
 
 /*Busca*/
 
-.pesq-botao{
-    background: #F5F5F5;
+.pesq-botao {
+    background: #f5f5f5;
     height: 20px;
     border-radius: 50px;
     padding: 10px;
@@ -104,7 +104,7 @@ body{
     box-shadow: 1px 1px rgb(146, 137, 137);
 }
 
-.pesq-texto{
+.pesq-texto {
     border: 0;
     background: none;
     outline: 0;
@@ -114,7 +114,7 @@ body{
     width: 0;
 }
 
-.pesq-btn{
+.pesq-btn {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -122,9 +122,9 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-} 
+}
 
-.pesq-botao:hover{
+.pesq-botao:hover {
     box-shadow: 1px 2px rgb(146, 137, 137);
     border-radius: 30px;
 }
@@ -134,84 +134,82 @@ body{
     padding-left: 20px;
 }
 
-.botao-busca a{
+.botao-busca a {
     font-size: 15px;
 }
 
 /*--------*/
 
-@media screen and (max-width: 1100px){
-
-    .logo_header{
+@media screen and (max-width: 1100px) {
+    .logo_header {
         gap: 20px;
     }
 
-    .logo_header img{
+    .logo_header img {
         height: 28px;
     }
 
-    .nav a{
+    .nav a {
         font-size: 13px;
         padding: 0;
     }
 
-    .nav ul{
+    .nav ul {
         gap: 30px;
         padding: 0px;
     }
 }
 
-@media screen and (max-width: 1000px){
-
-    .header{
+@media screen and (max-width: 1000px) {
+    .header {
         height: 4rem;
     }
 
-    .redCor{
+    .redCor {
         height: 0.8rem;
     }
 
-    .logo_header{
+    .logo_header {
         gap: 30px;
     }
 
-    .logo_header img{
+    .logo_header img {
         height: 30px;
     }
 
-    .nav a{
+    .nav a {
         font-size: 10px;
         padding: 0;
     }
 
-    .nav ul{
+    .nav ul {
         gap: 20px;
         padding: 0px;
     }
 
-    .header .botao-busca{
+    .header .botao-busca {
         font-size: 10px;
         gap: 25px;
     }
 
-    .pesq-botao{
+    .pesq-botao {
         height: 10px;
     }
 
-    .pesq-texto{
+    .pesq-texto {
         font-size: 10px;
     }
 
-    .pesq-btn{
+    .pesq-btn {
         height: 5px;
         width: 100%;
     }
 
-    .loupe-red{
+    .loupe-red {
         width: 10px;
     }
 
-    .pesq-botao:hover{
+    .pesq-botao:hover {
         border-radius: 15px;
     }
 
@@ -220,62 +218,61 @@ body{
         padding-left: 1;
     }
 
-    .botao-busca a{
+    .botao-busca a {
         font-size: 10px;
     }
-} 
+}
 
-@media screen and (max-width: 740px){
-
-    .header{
+@media screen and (max-width: 740px) {
+    .header {
         height: 3rem;
     }
 
-    .redCor{
+    .redCor {
         height: 0.5rem;
     }
 
-    .logo_header{
+    .logo_header {
         gap: 10px;
     }
 
-    .logo_header img{
+    .logo_header img {
         height: 20px;
     }
 
-    .nav a{
+    .nav a {
         font-size: 8px;
         padding: 0;
     }
 
-    .nav ul{
+    .nav ul {
         gap: 10px;
         padding: 0px;
     }
 
-    .header .botao-busca{
+    .header .botao-busca {
         font-size: 9px;
         gap: 10px;
     }
 
-    .pesq-botao{
+    .pesq-botao {
         height: 5px;
     }
 
-    .pesq-texto{
+    .pesq-texto {
         font-size: 9px;
     }
 
-    .pesq-btn{
+    .pesq-btn {
         height: 1px;
         width: 20%;
     }
 
-    .loupe-red{
+    .loupe-red {
         width: 10px;
     }
 
-    .pesq-botao:hover{
+    .pesq-botao:hover {
         border-radius: 10px;
     }
 
@@ -284,8 +281,7 @@ body{
         padding-left: 1px;
     }
 
-    .botao-busca a{
+    .botao-busca a {
         font-size: 9px;
     }
-    
-} 
+}
