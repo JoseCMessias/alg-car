@@ -49,7 +49,7 @@ export const Cadastro = () => {
                             <div className="inputs-cadastro">
                                 <input
                                     type="email"
-                                    name="email"
+                                    required
                                     placeholder="seu email"
                                     autoFocus
                                     value={usuario.emailUsuario}
@@ -59,7 +59,6 @@ export const Cadastro = () => {
                                             emailUsuario: e.target.value,
                                         })
                                     }
-                                    required
                                 />
                             </div>
 
@@ -78,13 +77,14 @@ export const Cadastro = () => {
                                     required
                                 />
                             </div>
-
-                            <input
+ 
+                            <button
                                 type="submit"
                                 value="Criar"
                                 onClick={handleCriarConta}
-                            />
-                        </form>
+                                required
+                            > login </button>
+                        </form> 
 
                         <p>
                             Voltar à página de Login?{" "}
