@@ -1,6 +1,8 @@
 import "./Carrousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
+import slide1 from '../../assets/slide1.svg'
+import slide2 from '../../assets/slide2.svg'
 
 import { register } from "swiper/element/bundle";
 
@@ -15,8 +17,8 @@ const Carrousel = () => {
     const [slidesPerView, setSlidePerView] = useState(1);
 
     const data = [
-        { id: "1", image: "/src/assets/slide1.svg" },
-        { id: "2", image: "/src/assets/slide2.svg" },
+        { id: "1", image: slide1 },
+        { id: "2", image: slide2 },
     ];
 
     useEffect(() => {
