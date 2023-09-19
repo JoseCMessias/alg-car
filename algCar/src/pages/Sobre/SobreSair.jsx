@@ -1,11 +1,12 @@
 import Perfil from "../../assets/perfil.svg";
+import { NavbarSair } from "../../components/Navbar/NavbarSair";
 import "./Sobre.css";
-import { Navbar } from "../../components/Navbar/Navbar";
 
-export const Sobre = () => {
+
+export const SobreSair = () => {
     return (
         <div>
-            <Navbar />
+            <NavbarSair />
             <div className="body-sobre">
                 <div className="container-sobre">
                     <h1 className="titulo-sobre">Sobre mim</h1>

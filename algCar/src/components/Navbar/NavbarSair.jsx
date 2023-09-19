@@ -4,23 +4,27 @@ import ImgLogo from "/src/assets/logo.svg";
 import ImgBusca from "/src/assets/loupe.red.svg";
 import "./Navbar.css";
 
-export const Navbar = () => {
+export const NavbarSair = () => {
     return (
         <div>
             <div className="redCor"></div>
             <div className="header" id="header">
                 <div className="logo_header">
-                    <Link to="/">
-                        <img src={ImgLogo} alt="Imagem Logo" />
-                    </Link>
+                    <Link to='/homesair'><img src={ImgLogo} alt="Imagem Logo" /></Link>
 
                     <div className="nav" id="nav">
                         <ul>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/homesair">Home</Link>
                             </li>
                             <li>
-                                <Link to="/sobre">Sobre</Link>
+                                <Link to="/sobresair">Sobre</Link>
+                            </li>
+                            <li>
+                                <Link to="/listar">Listar Carros</Link>
+                            </li>
+                            <li>
+                                <Link to="/add">Adicionar Carros</Link>
                             </li>
                         </ul>
                     </div>
@@ -47,7 +51,7 @@ export const Navbar = () => {
                     <div className="botao-acesso" id="botao-acesso">
                         <ul>
                             <li>
-                                <Link to="/login">Acessar</Link>
+                                <Link to="/">Sair</Link>
                             </li>
                         </ul>
                     </div>

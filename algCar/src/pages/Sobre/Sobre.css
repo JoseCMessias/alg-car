@@ -19,6 +19,12 @@
     box-shadow: 1px 1px 1px rgb(146, 137, 137);
 }
 
+.perfil-sobre p{
+    font-family: sans-serif;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 800px) {
     .container-sobre {
         max-width: 450px;
