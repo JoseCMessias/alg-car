@@ -25,7 +25,6 @@ export const ListarVeiculos = ({}) => {
                     {veiculos.map((veiculo, index) => (
                         <li className="veiculo-li" key={index}>
                             <div className="imput-file-listar">
-                                {/* Certifique-se de que veiculo.image contenha a URL da imagem */}
                                 {veiculo.image && (
                                     <img src={veiculo.image} alt="" />
                                 )}

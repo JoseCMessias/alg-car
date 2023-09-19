@@ -10,7 +10,7 @@ export const Navbar = () => {
             <div className="redCor"></div>
             <div className="header" id="header">
                 <div className="logo_header">
-                    <img src={ImgLogo} alt="Imagem Logo" />
+                    <Link to='/'><img src={ImgLogo} alt="Imagem Logo" /></Link>
 
                     <div className="nav" id="nav">
                         <ul>

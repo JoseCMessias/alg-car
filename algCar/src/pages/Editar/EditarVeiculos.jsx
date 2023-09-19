@@ -6,7 +6,7 @@ export const EditarVeiculos = () => {
     const { index } = useParams();
     const navigate = useNavigate();
     const [veiculo, setVeiculo] = useState({
-        image: "", // Inicialmente, a imagem é uma string vazia
+        image: "",
         marca: "",
         modelo: "",
         ano: "",
