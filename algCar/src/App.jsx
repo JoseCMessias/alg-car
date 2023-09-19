@@ -9,10 +9,12 @@ import { SobreSair } from "./pages/Sobre/SobreSair.jsx";
 import { Login } from "./pages/Login/Login.jsx";
 import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import { Navbar } from "./components/Navbar/Navbar.jsx";
 
 function App() {
     return (
         <Router>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/homesair" element={<HomeSair />} />
