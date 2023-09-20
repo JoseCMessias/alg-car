@@ -23,7 +23,8 @@ editar e excluir informações.
 
 ## Serviços Usados &#128736;&#65039;
 
-- Github
+- [Github](https://github.com/)
+- [Vercel](https://vercel.com/)
 
 ## Como Usar 	&#128377;&#65039;
 
@@ -39,6 +40,9 @@ editar e excluir informações.
     ```
        npm run dev
      ```
+## Ou clicando no link abaixo &#128105;&#8205;&#128187;
+
+- [Link Vercel](https://alg-car.vercel.app/)
 
 ## Características 		&#128221;
 
@@ -55,9 +59,3 @@ As principais características do site são:
 ## Licença  &#9745;&#65039;
 
 - [Licença MIT](https://github.com/JoseCMessias/alg-carros/blob/main/LICENSE)
-
-<!-- 
-## Deseja testar nosso site? &#128105;&#8205;&#128187;
-
-- [Link executável]()
--->
