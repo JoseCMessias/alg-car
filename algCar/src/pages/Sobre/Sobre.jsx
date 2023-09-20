@@ -8,7 +8,7 @@ export const Sobre = () => {
             <Navbar />
             <div className="body-sobre">
                 <div className="container-sobre">
-                    <h1 className="titulo-sobre">Sobre mim</h1>
+                    <h1 className="titulo-sobre">Sobre o Projeto</h1>
                     <div className="sobre-sobre">
                         <div className="perfil-sobre">
                             <img src={Perfil} alt="" />
