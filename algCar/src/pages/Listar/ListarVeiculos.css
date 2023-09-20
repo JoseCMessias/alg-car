@@ -1,10 +1,10 @@
 .container-listar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 0px;
     height: 100vh;
 }
 
