@@ -1,3 +1,7 @@
+.container-oferta{
+    margin-bottom: 50px;
+}
+
 .oferta {
     display: flex;
     align-items: center;

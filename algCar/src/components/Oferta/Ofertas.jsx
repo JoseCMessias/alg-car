@@ -4,7 +4,7 @@ import "./Ofertas.css";
 
 function Ofertas() {
     return (
-        <>
+        <div className="container-oferta">
             <div className="titulo">
                 <h2>Ofertas</h2>
             </div>
@@ -12,7 +12,7 @@ function Ofertas() {
             <div className="oferta">
                 <img className="img-oferta" src={Oferta} alt="" />
             </div>
-        </>
+        </div>
     );
 }
 
