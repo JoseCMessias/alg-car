@@ -4,7 +4,7 @@
   <p>Torne a sua viagem mais confortável!</p>
 </h1>
 
-## Sobre &#128161;
+## Sobre &#128161; 
 
 O site ALG CAR é o resultado de um projeto proposto pelo curso da Alicerce Educação como 
 projeto final. Nesse empreendimento, desenvolvemos um sistema voltado para o cliente, 
@@ -40,7 +40,7 @@ editar e excluir informações.
     ```
        npm run dev
      ```
-## Ou clicando no link abaixo &#128105;&#8205;&#128187;
+## Ou clicando no link abaixo &#128377;&#65039;
 
 - [Link Vercel](https://alg-car.vercel.app/)
 
