@@ -20,7 +20,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">FIAT MOBI</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaomobi">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">RENAULT LOGAN</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaologan">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">JEEP RENEGADE</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaojeep">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">VW GOL</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaogol">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">FIAT MOBI</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaomobi">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">RENAULT LOGAN</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaologan">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">JEEP RENEGADE</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaojeep">Ver mais</Link>
                             </button>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ function Veiculos() {
                         <div className="frota-descrocao">
                             <h3 className="h3-frota">VW GOL</h3>
                             <button className="botao-frota">
-                                <Link to="/descricao">Ver mais</Link>
+                                <Link to="/descricaogol">Ver mais</Link>
                             </button>
                         </div>
                     </div>
