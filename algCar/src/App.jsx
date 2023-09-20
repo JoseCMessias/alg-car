@@ -9,6 +9,10 @@ import { SobreSair } from "./pages/Sobre/SobreSair.jsx";
 import { Login } from "./pages/Login/Login.jsx";
 import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import { DescricaoMobi } from "./pages/Descricao/DescricaoMobi.jsx"
+import { DescricaoGol } from "./pages/Descricao/DescricaoGol.jsx";
+import { DescricaoJeep } from "./pages/Descricao/DescricaoJeep.jsx";
+import { DescricaoLogan } from "./pages/Descricao/DescricaoLogan.jsx";
 
 function App() {
     return (
@@ -23,6 +27,11 @@ function App() {
                 <Route path="/edit/:index" element={<EditarVeiculos />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/cadastro" element={<Cadastro />} />
+                <Route path="/descricaomobi" element={<DescricaoMobi/>} />
+                <Route path="/descricaogol" element={<DescricaoGol/>} />
+                <Route path="/descricaojeep" element={<DescricaoJeep />} />
+                <Route path="/descricaologan" element={<DescricaoLogan />} />
+
             </Routes>
             <Footer />
         </Router>
