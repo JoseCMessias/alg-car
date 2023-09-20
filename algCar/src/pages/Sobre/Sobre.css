@@ -1,8 +1,9 @@
 .body-sobre {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin-top: 100px;
     height: 100vh;
 }
 
