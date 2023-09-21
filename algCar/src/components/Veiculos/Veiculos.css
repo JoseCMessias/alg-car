@@ -21,7 +21,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .frota_1,
@@ -30,8 +29,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    gap: 25px;
+    padding: 20px;
+    gap: 30px;
     cursor: pointer;
 }
 

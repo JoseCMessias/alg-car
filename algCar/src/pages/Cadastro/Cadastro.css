@@ -149,12 +149,11 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .cadastro {
         border: none;
         box-shadow: none;
         width: 70%;
-        height: 10%;
     }
 
     .cadastro input {
