@@ -22,7 +22,7 @@ export const Login = () => {
             storedUser.emailUsuario === credenciais.email &&
             storedUser.senhaUsuario === credenciais.senha
         ) {
-            localStorage.setItem("isLogged", true);
+            localStorage.setItem("taRegistrado", true);
             alert("Login bem sucedido");
             navigate("/homesair");
         } else {

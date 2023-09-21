@@ -47,7 +47,7 @@ export const Navbar = () => {
                     <div className="botao-acesso" id="botao-acesso">
                         <ul>
                             <li>
-                                <Link to="/login">Acessar</Link>
+                                <Link to="/login">Login</Link>
                             </li>
                         </ul>
                     </div>
