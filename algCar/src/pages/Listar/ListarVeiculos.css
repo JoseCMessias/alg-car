@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .titulo-listar {
