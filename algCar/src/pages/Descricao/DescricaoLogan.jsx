@@ -38,10 +38,6 @@ export const DescricaoLogan = () => {
                                     </div>
                                 </div>
 
-                                <div className="grupo-descricao-barra   ">
-                                    {" "}
-                                </div>
-
                                 <div className="grupo-descricao">
                                     <div className="descricao">
                                         <img src={malaIMG} alt="" />

@@ -29,7 +29,7 @@ export const DescricaoGol = () => {
 
                                     <div className="descricao">
                                         <img src={passIMG} alt="" />
-                                        <p>5 Passageiros</p>
+                                        <p>4 Passageiros</p>
                                     </div>
 
                                     <div className="descricao">

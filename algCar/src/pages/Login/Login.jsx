@@ -19,8 +19,8 @@ export const Login = () => {
 
         const storedUser = JSON.parse(localStorage.getItem("usuario"));
         if (
-            storedUser.email === credenciais.emailUsuario &&
-            storedUser.senha === credenciais.senhaUsuario
+            storedUser.emailUsuario === credenciais.email &&
+            storedUser.senhaUsuario === credenciais.senha
         ) {
             localStorage.setItem("isLogged", true);
             alert("Login bem sucedido");
