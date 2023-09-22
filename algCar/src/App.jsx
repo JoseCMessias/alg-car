@@ -13,6 +13,10 @@ import { DescricaoMobi } from "./pages/Descricao/DescricaoMobi.jsx"
 import { DescricaoGol } from "./pages/Descricao/DescricaoGol.jsx";
 import { DescricaoJeep } from "./pages/Descricao/DescricaoJeep.jsx";
 import { DescricaoLogan } from "./pages/Descricao/DescricaoLogan.jsx";
+import { DescricaoMobiSair } from "./pages/Descricao/DescricaoMobiSair.jsx"
+import { DescricaoGolSair } from "./pages/Descricao/DescricaoGolSair.jsx";
+import { DescricaoJeepSair } from "./pages/Descricao/DescricaoJeepSair.jsx";
+import { DescricaoLoganSair } from "./pages/Descricao/DescricaoLoganSair.jsx";
 
 function App() {
     return (
@@ -32,6 +36,10 @@ function App() {
                 <Route path="/descricaojeep" element={<DescricaoJeep />} />
                 <Route path="/descricaologan" element={<DescricaoLogan />} />
 
+                <Route path="/descricaomobiSair" element={<DescricaoMobiSair/>} />
+                <Route path="/descricaogolSair" element={<DescricaoGolSair/>} />
+                <Route path="/descricaojeepSair" element={<DescricaoJeepSair />} />
+                <Route path="/descricaologanSair" element={<DescricaoLoganSair />} />
             </Routes>
             <Footer />
         </Router>
