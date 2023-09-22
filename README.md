@@ -9,7 +9,7 @@
 O site ALG CAR é o resultado de um projeto proposto pelo curso da Alicerce Educação como 
 projeto final. Nesse empreendimento, desenvolvemos um sistema voltado para o cliente, 
 que oferece funcionalidades essenciais, tais como a capacidade de adicionar, listar, 
-editar e excluir informações. Nessa aplicação foi usado o LocalStored do navegado para 
+editar e excluir informações. Nessa aplicação foi usado o Local Storage do navegado para 
 armazenamento e manipulação dos dados. 
 
 ## Tecnologias &#128126;
