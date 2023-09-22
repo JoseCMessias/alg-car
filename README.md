@@ -9,7 +9,8 @@
 O site ALG CAR é o resultado de um projeto proposto pelo curso da Alicerce Educação como 
 projeto final. Nesse empreendimento, desenvolvemos um sistema voltado para o cliente, 
 que oferece funcionalidades essenciais, tais como a capacidade de adicionar, listar, 
-editar e excluir informações.
+editar e excluir informações. Nessa aplicação foi usado o LocalStored do navegado para 
+armazenamento e manipulação dos dados. 
 
 ## Tecnologias &#128126;
 
@@ -19,6 +20,8 @@ editar e excluir informações.
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React](https://pt-br.legacy.reactjs.org/)
 - [Vite](https://vitejs.dev/)
+- [React Router Dom](https://www.npmjs.com/package/react-router-dom)
+- [Swiper](https://swiperjs.com/)
 - [Visual Studio Code](https://code.visualstudio.com)
 
 ## Serviços Usados &#128736;&#65039;
@@ -38,8 +41,9 @@ editar e excluir informações.
      ```
 - Execute o projeto com o comando:
     ```
-       npm run dev
+       npm run dev OU npm start
      ```
+    
 ## Ou clicando no link abaixo &#128377;&#65039;
 
 - [Link Vercel](https://alg-car.vercel.app/)
@@ -48,9 +52,9 @@ editar e excluir informações.
 
 As principais características do site são:
 - Adicionar um veículo
+- Listar os veículos
 - Editar um veículo
 - Excluir um veículo
-- Listar os veículos
 
 ## Autor 	&#128101;
 
