@@ -52,9 +52,9 @@ armazenamento e manipulação dos dados.
 
 As principais características do site são:
 - Adicionar um veículo
+- Listar os veículos
 - Editar um veículo
 - Excluir um veículo
-- Listar os veículos
 
 ## Autor 	&#128101;
 
